@@ -1,7 +1,5 @@
 # mkv_subscale
 
-# mkv_subscale
-
 [![CI Status](https://github.com/vincentdesiree/mkv_subscale/actions/workflows/ci.yml/badge.svg)](https://github.com/vincentdesiree/mkv_subscale/actions/workflows/ci.yml)
 [![GitHub Release](https://img.shields.io/github/v/release/vincentdesiree/mkv_subscale?include_prereleases&sort=semver&color=blue)](https://github.com/vincentdesiree/mkv_subscale/releases/latest)
 [![License](https://img.shields.io/badge/license-MIT%20%2F%20Apache--2.0-blue.svg)](https://github.com/vincentdesiree/mkv_subscale#license)
