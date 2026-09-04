@@ -1,0 +1,29 @@
+# --- RUST & BUILD ---
+/target/
+**/*.rs.bk
+
+# --- SECRETS & CONFIDENTIALITÉ ---
+.env
+.env.*
+!**/.env.example
+
+# --- DONNÉES LOCALES & PERSISTANCE ---
+/data/*
+!/data/.gitkeep
+*.csv
+*.sqlite
+*.db
+*.parquet
+
+# --- OS & ÉDITEURS (Zed, VS Code, etc.) ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.zed/
+.zed-settings.json
+
+# --- TEMPORAIRE & LOGS ---
+*.log
+tmp/
+/temp/

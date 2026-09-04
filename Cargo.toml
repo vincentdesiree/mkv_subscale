@@ -1,0 +1,42 @@
+[package]
+name = "mkv_subscale"
+version = "0.1.0"
+edition = "2024"
+authors = ["Vincent Désirée"]
+license = "MIT OR Apache-2.0"
+description = "CLI tool to extract, fix SSA/ASS subtitle scaling, and remux MKV files."
+
+[lints.rust]
+dead_code = "warn"
+non_snake_case = "warn"
+unreachable_code= "warn"
+
+[lints.clippy]
+pedantic = {level = "warn", priority = -1}
+nursery = {level = "warn", priority = -1}
+style = {level = "warn", priority = -1}
+
+unwrap_used = "warn"
+expect_used = "warn"
+todo = "warn"
+
+[dependencies]
+anyhow = "1.0"
+thiserror = "2.0"
+env_logger = "0.11"
+log        = "0.4"
+itertools = "0.15"
+clap = { version = "4.6", features = ["derive"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tempfile = "3.27"
+walkdir = "2.5"
+indicatif = "0.18"
+rayon = "1.12.0"
+
+[profile.release]
+opt-level = 'z'     # Optimize for size
+lto = true          # Slower compilation, faster execution
+codegen-units = 1   #<[fim-middle]>
+panic = "abort"     # Suppress stack unwinding, reduces binary size
+strip = true
